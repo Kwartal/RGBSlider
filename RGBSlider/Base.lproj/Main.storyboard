@@ -101,16 +101,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="BlueColorSlider" destination="bQD-T5-lxG" id="LZz-G8-hAe"/>
-                        <outlet property="GreenColorSlider" destination="Ls9-5B-eCq" id="Eyi-mH-6p5"/>
-                        <outlet property="RedColorSlider" destination="6qX-GW-h4a" id="fxF-nU-E01"/>
-                        <outlet property="colorWindowView" destination="d3z-X1-iOl" id="OHt-Fy-U8s"/>
-                        <outlet property="nameBlueColorLabel" destination="foQ-As-hva" id="el4-tG-d3X"/>
-                        <outlet property="nameGreenColorLabel" destination="8bC-Xf-vdC" id="oiQ-Fs-46q"/>
-                        <outlet property="nameRedColorLabel" destination="q5F-TM-RTm" id="8ay-SC-fvf"/>
-                        <outlet property="valueBlueColorLabel" destination="XAk-Wf-H3N" id="LZ2-Bt-fHA"/>
-                        <outlet property="valueGreenColorLabel" destination="PEG-4P-T76" id="Ob7-sK-1DL"/>
-                        <outlet property="valueRedColorLabel" destination="AB1-8m-XcD" id="Nhm-nV-DPr"/>
+                        <outlet property="GreenColorSlider" destination="bQD-T5-lxG" id="2jJ-4S-uA2"/>
+                        <outlet property="blueColorSlider" destination="bQD-T5-lxG" id="xcJ-7N-Nyv"/>
+                        <outlet property="colorWindowView" destination="d3z-X1-iOl" id="973-LQ-Tkp"/>
+                        <outlet property="nameBlueColorLabel" destination="foQ-As-hva" id="cyk-O8-jTx"/>
+                        <outlet property="nameGreenColorLabel" destination="TI5-Gb-Dng" id="GHm-7y-pVu"/>
+                        <outlet property="nameRedColorLabel" destination="q5F-TM-RTm" id="G2G-UB-lwa"/>
+                        <outlet property="redColorSlider" destination="6qX-GW-h4a" id="JzU-bF-TS5"/>
+                        <outlet property="valueBlueColorLabel" destination="XAk-Wf-H3N" id="WsF-Pw-AL0"/>
+                        <outlet property="valueGreenColorLabel" destination="PEG-4P-T76" id="kNA-cG-xBP"/>
+                        <outlet property="valueRedColorLabel" destination="PEG-4P-T76" id="G8E-9Y-xHU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
