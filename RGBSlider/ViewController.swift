@@ -24,41 +24,92 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueColorSlider: UISlider!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupSliders()
         setupColorWindowView()
-        setupNameColorLabels()
-        setupValueColorLabels()
-        setupColorSliders()
+        setupNameLabels()
+        setupValueLabels()
+        
+        redSliderValue()
+
         
     }
 
-    func addSubviews() {
+    @IBAction func redSliderValue() {
+        valueRedColorLabel.text = String(redColorSlider.value)
+        changeColorWindowView()
         
     }
     
-    
-    func setupColorWindowView() {
-        colorWindowView.layer.cornerRadius = colorWindowView.frame.width / 30
-        colorWindowView.backgroundColor = .lightGray
+    @IBAction func greenSliderValue() {
+        valueGreenColorLabel.text = String(greenColorSlider.value)
+        changeColorWindowView()
     }
     
-    func setupNameColorLabels() {
+    @IBAction func blueSliderValue() {
+        valueBlueColorLabel.text = String(blueColorSlider.value)
+        changeColorWindowView()
+    }
+
+    private func addSubviews() {
+
+    }
+
+
+    private func setupColorWindowView() {
+        colorWindowView.layer.cornerRadius = colorWindowView.frame.width / 25
         
     }
-    
-    func setupValueColorLabels() {
-        
+
+    private func setupNameLabels() {
+        nameRedColorLabel.textColor = .white
+        nameGreenColorLabel.textColor = .white
+        nameBlueColorLabel.textColor = .white
+
     }
-    
-    func setupColorSliders() {
+
+    private func setupValueLabels() {
+        valueRedColorLabel.textColor = .white
+        valueGreenColorLabel.textColor = .white
+        valueBlueColorLabel.textColor = .white
+
+        valueRedColorLabel.text = String(redColorSlider.value)
+        valueGreenColorLabel.text = String(greenColorSlider.value)
+        valueBlueColorLabel.text = String(blueColorSlider.value)
+
+
+
+
+
+    }
+
+    private func setupSliders() {
+        redSliderValue()
+        greenSliderValue()
+        blueSliderValue()
+
         redColorSlider.tintColor = .red
-        
+        redColorSlider.value = 0
+        redColorSlider.minimumValue = 0
+        redColorSlider.maximumValue = 1
+
         greenColorSlider.tintColor = .green
+        greenColorSlider.value = 0
+        greenColorSlider.minimumValue = 0
+        greenColorSlider.maximumValue = 1
 
         blueColorSlider.tintColor = .blue
+        blueColorSlider.value = 0
+        blueColorSlider.minimumValue = 0
+        blueColorSlider.maximumValue = 1
 
+    }
+
+    private func changeColorWindowView() {
+        colorWindowView.backgroundColor = UIColor(red: CGFloat(redColorSlider.value), green: CGFloat(greenColorSlider.value), blue: CGFloat(blueColorSlider.value), alpha: 1)
     }
 }
 

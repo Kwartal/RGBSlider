@@ -25,10 +25,13 @@
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6qX-GW-h4a">
                                 <rect key="frame" x="142.66666666666663" y="265" width="233.33333333333337" height="31"/>
+                                <connections>
+                                    <action selector="redSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="gCw-5H-nhn"/>
+                                </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB1-8m-XcD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB1-8m-XcD">
                                 <rect key="frame" x="73.333333333333329" y="270" width="34.333333333333329" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -52,6 +55,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ls9-5B-eCq">
                                 <rect key="frame" x="142.66666666666663" y="303" width="233.33333333333337" height="31"/>
+                                <connections>
+                                    <action selector="greenSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="Lln-oS-dnZ"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAk-Wf-H3N">
                                 <rect key="frame" x="73" y="347.33333333333331" width="34.666666666666657" height="20.666666666666686"/>
@@ -67,6 +73,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bQD-T5-lxG">
                                 <rect key="frame" x="142.66666666666663" y="341" width="233.33333333333337" height="31"/>
+                                <connections>
+                                    <action selector="blueSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="6WG-DA-rec"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -110,12 +119,12 @@
                         <outlet property="redColorSlider" destination="6qX-GW-h4a" id="JzU-bF-TS5"/>
                         <outlet property="valueBlueColorLabel" destination="XAk-Wf-H3N" id="WsF-Pw-AL0"/>
                         <outlet property="valueGreenColorLabel" destination="PEG-4P-T76" id="kNA-cG-xBP"/>
-                        <outlet property="valueRedColorLabel" destination="PEG-4P-T76" id="G8E-9Y-xHU"/>
+                        <outlet property="valueRedColorLabel" destination="AB1-8m-XcD" id="ilA-eb-jjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.40000000000001" y="109.35960591133005"/>
+            <point key="canvasLocation" x="129.23076923076923" y="108.76777251184834"/>
         </scene>
     </scenes>
     <resources>
