@@ -20,14 +20,45 @@ class ViewController: UIViewController {
     @IBOutlet weak var valueBlueColorLabel: UILabel!
     
     @IBOutlet weak var redColorSlider: UISlider!
-    @IBOutlet weak var GreenColorSlider: UISlider!
+    @IBOutlet weak var greenColorSlider: UISlider!
     @IBOutlet weak var blueColorSlider: UISlider!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupColorWindowView()
+        setupNameColorLabels()
+        setupValueColorLabels()
+        setupColorSliders()
+        
     }
 
+    func addSubviews() {
+        
+    }
+    
+    
+    func setupColorWindowView() {
+        colorWindowView.layer.cornerRadius = colorWindowView.frame.width / 30
+        colorWindowView.backgroundColor = .lightGray
+    }
+    
+    func setupNameColorLabels() {
+        
+    }
+    
+    func setupValueColorLabels() {
+        
+    }
+    
+    func setupColorSliders() {
+        redColorSlider.tintColor = .red
+        
+        greenColorSlider.tintColor = .green
+
+        blueColorSlider.tintColor = .blue
+
+    }
 }
 
