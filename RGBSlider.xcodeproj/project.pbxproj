@@ -40,6 +40,8 @@
 		7163EDD3289C5A8100D1080D = {
 			isa = PBXGroup;
 			children = (
+				7163EDDF289C5A8100D1080D /* AppDelegate.swift */,
+				7163EDE1289C5A8100D1080D /* SceneDelegate.swift */,
 				7163EDDE289C5A8100D1080D /* RGBSlider */,
 				7163EDDD289C5A8100D1080D /* Products */,
 			);
@@ -56,8 +58,6 @@
 		7163EDDE289C5A8100D1080D /* RGBSlider */ = {
 			isa = PBXGroup;
 			children = (
-				7163EDDF289C5A8100D1080D /* AppDelegate.swift */,
-				7163EDE1289C5A8100D1080D /* SceneDelegate.swift */,
 				7163EDE3289C5A8100D1080D /* ViewController.swift */,
 				7163EDE5289C5A8100D1080D /* Main.storyboard */,
 				7163EDE8289C5A8100D1080D /* Assets.xcassets */,
