@@ -34,23 +34,24 @@ class ViewController: UIViewController {
         setupValueLabels()
         
         redSliderValue()
-
+        greenSliderValue()
+        blueSliderValue()
         
     }
 
     @IBAction func redSliderValue() {
-        valueRedColorLabel.text = String(redColorSlider.value)
+        valueRedColorLabel.text = String(format: "%.2f", redColorSlider.value)
         changeColorWindowView()
         
     }
     
     @IBAction func greenSliderValue() {
-        valueGreenColorLabel.text = String(greenColorSlider.value)
+        valueGreenColorLabel.text = String(format: "%.2f", greenColorSlider.value)
         changeColorWindowView()
     }
     
     @IBAction func blueSliderValue() {
-        valueBlueColorLabel.text = String(blueColorSlider.value)
+        valueBlueColorLabel.text = String(format: "%.2f", blueColorSlider.value)
         changeColorWindowView()
     }
 
@@ -73,13 +74,18 @@ class ViewController: UIViewController {
 
     private func setupValueLabels() {
         valueRedColorLabel.textColor = .white
+        valueRedColorLabel.font = .systemFont(ofSize: 17
+        )
         valueGreenColorLabel.textColor = .white
+        valueGreenColorLabel.font = .systemFont(ofSize: 17)
+        
         valueBlueColorLabel.textColor = .white
+        valueBlueColorLabel.font = .systemFont(ofSize: 17)
+        
 
         valueRedColorLabel.text = String(redColorSlider.value)
         valueGreenColorLabel.text = String(greenColorSlider.value)
         valueBlueColorLabel.text = String(blueColorSlider.value)
-
 
 
 
