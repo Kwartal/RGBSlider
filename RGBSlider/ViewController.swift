@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         redSliderValue()
         greenSliderValue()
         blueSliderValue()
-        
     }
 
     @IBAction func redSliderValue() {
@@ -55,48 +54,31 @@ class ViewController: UIViewController {
         changeColorWindowView()
     }
 
-    private func addSubviews() {
-
-    }
-
-
     private func setupColorWindowView() {
         colorWindowView.layer.cornerRadius = colorWindowView.frame.width / 25
-        
     }
 
     private func setupNameLabels() {
         nameRedColorLabel.textColor = .white
         nameGreenColorLabel.textColor = .white
         nameBlueColorLabel.textColor = .white
-
     }
 
     private func setupValueLabels() {
         valueRedColorLabel.textColor = .white
-        valueRedColorLabel.font = .systemFont(ofSize: 17
-        )
+        valueRedColorLabel.font = .systemFont(ofSize: 17)
         valueGreenColorLabel.textColor = .white
         valueGreenColorLabel.font = .systemFont(ofSize: 17)
         
         valueBlueColorLabel.textColor = .white
         valueBlueColorLabel.font = .systemFont(ofSize: 17)
-        
 
         valueRedColorLabel.text = String(redColorSlider.value)
         valueGreenColorLabel.text = String(greenColorSlider.value)
         valueBlueColorLabel.text = String(blueColorSlider.value)
-
-
-
-
     }
 
     private func setupSliders() {
-        redSliderValue()
-        greenSliderValue()
-        blueSliderValue()
-
         redColorSlider.tintColor = .red
         redColorSlider.value = 0
         redColorSlider.minimumValue = 0
@@ -111,7 +93,6 @@ class ViewController: UIViewController {
         blueColorSlider.value = 0
         blueColorSlider.minimumValue = 0
         blueColorSlider.maximumValue = 1
-
     }
 
     private func changeColorWindowView() {
