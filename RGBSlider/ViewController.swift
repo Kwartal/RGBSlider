@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         redSliderValue()
         greenSliderValue()
         blueSliderValue()
+        
     }
 
     @IBAction func redSliderValue() {
@@ -96,7 +97,10 @@ class ViewController: UIViewController {
     }
 
     private func changeColorWindowView() {
-        colorWindowView.backgroundColor = UIColor(red: CGFloat(redColorSlider.value), green: CGFloat(greenColorSlider.value), blue: CGFloat(blueColorSlider.value), alpha: 1)
+        colorWindowView.backgroundColor = UIColor(red: CGFloat(redColorSlider.value),
+                                                  green: CGFloat(greenColorSlider.value),
+                                                  blue: CGFloat(blueColorSlider.value),
+                                                  alpha: 1)
     }
 }
 
